@@ -854,6 +854,9 @@ Ph: +91 89207-15019
             .collapse .panel-body {
                 padding: unset !important;
             }
+            .spacing-mobile{
+                padding-top: 0px!important;
+            }
 
             .cxp-card-height {
                 height: auto;
@@ -872,7 +875,7 @@ Ph: +91 89207-15019
     </Style>
 
     <!-- banner Section Start -->
-   <section id="services" class="cxp-services">
+  <section id="services" class="cxp-services">
     <div class="item cxp-amity-page-page-banner"
         style="background: url('https://niu.edu.in/wp-content/uploads/2025/03/DJI_0014-1.webp') no-repeat center center / cover !important;
             height: 650px;
@@ -882,27 +885,18 @@ Ph: +91 89207-15019
             align-items: center;
             justify-content: center;">
         
-        <!-- 50% width white overlay -->
-        <div style="position: absolute;
-                left: 0;
-                top: 0;
-                width: 50%;
-                height: 100%;
-                background-color: rgba(255, 255, 255, 0.5);">
-        </div>
+        <!-- 50% width white overlay - Desktop Only -->
+        <div class="cxp-desktop-white-overlay"></div>
         
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-xs-12">
-                    <div class="tt-carousel-caption cxp-desktop-height-banner-home-pages" 
-                        style="position: relative; z-index: 2;"> <!-- Added z-index -->
-                        
-                        <h1 class="cxp-size-64 cxp-niims-mobile-heading">
-                            <span class="cxp-green-color-web"></span>
+                    <div class="tt-carousel-caption cxp-desktop-height-banner-home-pages">
+                        <h1 class="cxp-size-64 cxp-niims-mobile-heading"><span
+                                class="cxp-green-color-web"></span>
                             <br />Noida International University
                         </h1>
-                        <p class="cxp-line-height-20px">Degree from NAAC A++ accredited</p>
-                        
+                        <p class="cxp-line-height-20px">Degree from NAAC A+ accredited </p>
                         <div class="row cxp-eligible-content cxp-college-acc-sec cxp-new-design-desktop">
                             <div class="col-lg-2 col-xs-3">
                                 <img style="max-width:unset;"
@@ -935,11 +929,10 @@ Ph: +91 89207-15019
                                 <a href="#acc-section" class="cxp-hvr-yellow">+more</a>
                             </div>
                         </div>
-                        
                         <div class="row cxp-eligible-content">
                             <div class="col-lg-6 col-xs-12 apply-to-university">
-                                <a style="color: #025E68; background: #FFDB58;" data-toggle="modal" data-target="#cxphomeenqformed"
-                                    class="btn btn-sm cxp-secondary-button-home-enquire-ed t"
+                                <a data-toggle="modal" data-target="#cxphomeenqformed"
+                                    class="btn btn-sm cxp-secondary-button-home-enquire-ed white-txt"
                                     role="button">Apply to
                                     University&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-arrow-right-square-fill vl-align"
@@ -964,9 +957,35 @@ Ph: +91 89207-15019
         </div>
     </div>
 </section>
+
+<style>
+    /* White overlay for desktop */
+    .cxp-desktop-white-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+    }
+    
+    /* Content container */
+    .tt-carousel-caption {
+        position: relative;
+        z-index: 2; /* Ensures content stays above overlay */
+    }
+    
+    /* Hide overlay on mobile */
+    @media (max-width: 991px) {
+        .cxp-desktop-white-overlay {
+            display: none;
+        }
+    }
+</style>
     <!-- banneer section end -->
     <!-- Our Accrediations and recognizaton Section Start-->
-    <section class="cxp-padding-54 cxp-pdt-48">
+    <section class="cxp-padding-54 cxp-pdt-48 spacing-mobile">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 cxp-home-headline-ed">
@@ -1532,11 +1551,11 @@ Ph: +91 89207-15019
             </div>
             <div class="row">
                 <div class="col-lg-8 cxp-home-headline-discover-ed cxp-mobile-degree">
-                    <h3 class="mb-2  cxp-earn-degree cxp-pdt-24">Acquire a UGC-DEB accredited degree and gain global
+                    <h3 class="mb-2  cxp-earn-degree cxp-pdt-24">Acquire a NAAC A+ accredited degree and gain global
                         recognition.
                     </h3>
                     <ul class="cxp-ln-19">
-                        <li> Hold an NAAC-accredited degree</li><br />
+                        <li> Hold an NAAC A+ accredited degree</li><br />
                         <li> Ranked 41st by NIRF</li><br />
                         <li> Recognized by WES</li><br />
                         <li>Equivalent to on-campus qualifications</li><br />
@@ -2065,19 +2084,19 @@ Ph: +91 89207-15019
                                         <h3 class="panel-title cxp-new-design-desktop">
                                             <a class="collapsed cxp-edu-faq cxp-mobile-faq " data-toggle="collapse"
                                                 data-parent="#accordion-one" href="#collapse-one" aria-expanded="false">
-                                                Is Noida International University UGC approved?
+                                                Is Noida International University NAAC A+ Approved?
                                             </a>
                                         </h3>
                                         <h3 class="panel-title cxp-new-design-mobile">
                                             <a class="collapsed cxp-edu-faq cxp-mobile-faq " data-toggle="collapse"
                                                 data-parent="#accordion-one" href="#collapse-one" aria-expanded="false">
-                                                Is Noida International University UGC approved?
+                                                Is Noida International University NAAC A+ Approved?
                                             </a>
                                         </h3>
                                     </div>
                                     <div id="collapse-one" class="panel-collapse collapse" aria-expanded="false">
                                         <div class="panel-body">
-                                            Yes, Noida International University is recognized by the University Grants Commission (UGC) and has been awarded 'A' grade by NAAC. The university is established under the Uttar Pradesh State Legislature Act.
+                                            Yes, Noida International University is recognized by the University Grants Commission (UGC) and has been awarded 'A+' grade by NAAC. The university is established under the Uttar Pradesh State Legislature Act.
                                         </div>
                                     </div>
                                 </div>
